@@ -8,7 +8,7 @@ const app = express();
 mongoose.connect('mongodb://localhost/test', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
+  useFindAndModify: false
 })
   .then(db => console.log('db connected...'))
   .catch(err => console.log(err));
